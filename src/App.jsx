@@ -21,9 +21,31 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/sw-development-details" element={<SoftwareDevelopmentDetails />} />
-        <Route path="/rpo-details" element={<RpoDetails />} />
+        <Route
+          exact
+          path="/"
+          element={
+            <Home
+              headerData={landingPageData.Header}
+              aboutData={landingPageData.About}
+              rpoData={landingPageData.Rpo}
+              softwareDevelopmentData={landingPageData.SoftwareDevelopment}
+              galleryData={landingPageData.Gallery}
+              testimonialsData={landingPageData.Testimonials}
+              teamData={landingPageData.Team}
+              careerData={landingPageData.Contact}
+              contactData={landingPageData.Contact}
+            />
+          }
+        />
+        <Route
+          path="/sw-development-details"
+          element={<SoftwareDevelopmentDetails />}
+        />
+        <Route
+          path="/rpo-details"
+          element={<RpoDetails data={landingPageData.RpoDetails} />}
+        />
       </Routes>
     </BrowserRouter>
   );

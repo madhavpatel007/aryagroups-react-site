@@ -32,7 +32,7 @@ export const Contact = (props) => {
       );
   };
   return (
-    <div>
+    <>
       <div id="contact">
         <div className="container">
           <div className="col-md-8">
@@ -156,6 +156,6 @@ export const Contact = (props) => {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };

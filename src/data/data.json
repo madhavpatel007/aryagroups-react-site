@@ -203,5 +203,62 @@
       "title": "Why Partner With Us",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     }
-  ]
+  ],
+  "RpoDetails": {
+    "intro": "Welcome to Arya Group's RPO Solutions, your trusted partner for Recruitment Process Outsourcing (RPO) and Staffing solutions. We specialize in delivering high-quality recruitment services that align with your business objectives. Our team of experienced recruiters utilizes cutting-edge technology and industry best practices to attract top talent. Whether you need RPO services or Staffing solutions, we are here to help you build a high-performing team.",
+    "services": [
+      {
+        "img": "img/team/01.jpg",
+        "title": "Our RPO Services",
+        "description": "Our RPO services offer a seamless recruitment experience, saving you time and resources. We understand the importance of finding the right talent for your organization, and our expert recruiters are skilled in identifying qualified candidates. By leveraging advanced sourcing techniques and utilizing high-reach keywords, we ensure that your job postings reach a wide audience. Our comprehensive RPO solutions are scalable and cost-effective, enabling you to streamline your hiring process."
+      },
+      {
+        "img": "img/team/02.jpg",
+        "title": "Our Staffing Services",
+        "description": "With our Staffing services, we provide you with the flexibility to quickly find the right talent for your temporary, contract, or permanent positions. Our extensive network of skilled professionals is ready to contribute to your organization's success. Through our targeted candidate assessment process, we evaluate each candidate's skills and cultural fit, ensuring that we present you with the best-matched individuals. By optimizing our job descriptions and utilizing high-reach keywords, we enhance your chances of attracting top talent."
+      }
+    ],
+    "reasons": [
+      {
+        "icon": "fa fa-comments-o",
+        "title":"expertiseAndExperience",
+        "description": "With years of experience in the recruitment industry, we have the expertise to effectively navigate the hiring landscape. Our team of skilled recruiters brings a wealth of knowledge and a proven track record in attracting top talent across various industries, increasing your chances of finding the perfect fit."
+      },
+      {
+        "icon": "fa fa-bullhorn",
+        "title":"remoteWorkerSolutions",
+        "description": "Our proven technology, tools, processes and market intelligence means ease, scale and flexibility for you.  As your dedicated partner for hiring remote workers, you can choose a combination of teams working on a contractual or on permanent basis. While you focus on your key projects and deliverables, we take your operational hassles away by recruiting, engaging and managing your outsourced remote teams."
+      },
+      {
+        "icon": "fa fa-group",
+        "title":"campusRecruitment",
+        "description": "Campus Recruitment services include Pre-campus, On-campus, Post-campus and Off-campus activities."
+      },
+      {
+        "icon": "fa fa-magic",
+        "title":"customizedSolutions",
+        "description": "We understand that every organization has unique needs. Our customized RPO and Staffing solutions are tailored to your specific requirements, ensuring that we align our services with your business objectives. By incorporating high reach keywords into our job postings, we increase their visibility and reach a larger pool of potential candidates."
+      },
+      {
+        "icon": "fa fa-comments-o",
+        "title":"cuttingEdgeTechnology",
+        "description": "We leverage the latest recruitment technologies and tools to enhance efficiency and accuracy. By utilizing advanced applicant tracking systems and data analytics, we identify and engage with candidates more effectively. Our optimized content, infused with high reach keywords, helps improve your search engine rankings, ensuring greater online visibility."
+      },
+      {
+        "icon": "fa fa-bullhorn",
+        "title":"scalabilityAndFlexibility",
+        "description": "Our services are designed to scale with your business. Whether you are a startup or a large enterprise, we can quickly adjust our resources to meet your changing hiring needs. By targeting high reach keywords, we attract a wider audience, increasing the likelihood of finding the right talent at the right time."
+      },
+      {
+        "icon": "fa fa-group",
+        "title":"partnershipApproach",
+        "description": "We value long-term partnerships with our clients. By closely collaborating with your HR team, we gain a deep understanding of your organizational culture, values, and goals. This enables us to present you with candidates who not only possess the required skills but also align with your company's vision. By optimizing our website content with high reach keywords, we improve our online visibility and reach a broader audience."
+      },
+      {
+        "icon": "fa fa-magic",
+        "title":"experienceTheDifference",
+        "description": "Partner with Arya Groups RPO Solutions and experience the difference of a strategic and results-driven recruitment service. Our optimized content, infused with high reach keywords, enhances your online presence and attracts qualified candidates. Contact us today to discuss your hiring needs and explore how our RPO and Staffing solutions can help you achieve your talent acquisition goals. Trust Arya Groups RPO Solutions to deliver exceptional recruitment services that drive your business forward."
+      }
+    ]
+  }
 }

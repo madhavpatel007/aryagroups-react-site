@@ -9,28 +9,31 @@ import { Testimonials } from "./testimonials";
 import { Team } from "./Team";
 import { Career } from "./career";
 import { Contact } from "./contact";
-import { useState } from "react";
-import { useEffect } from "react";
-import JsonData from "../data/data.json"
 
-function Home() {
-  const [landingPageData, setLandingPageData] = useState({});
-  useEffect(() => {
-    setLandingPageData(JsonData);
-  }, []);
-
+function Home(props) {
+  const {
+    headerData,
+    aboutData,
+    rpoData,
+    softwareDevelopmentData,
+    galleryData,
+    testimonialsData,
+    teamData,
+    careerData,
+    contactData,
+  } = props;
   return (
     <>
       <Navigation />
-      <Header data={landingPageData.Header} />
-      <About data={landingPageData.About} />
-      <Rpo data={landingPageData.Rpo} />
-      <SoftwareDevelopment data={landingPageData.SoftwareDevelopment} />
-      <Gallery data={landingPageData.Gallery} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Career data={landingPageData.Contact} />
-      <Contact data={landingPageData.Contact} />
+      <Header data={headerData} />
+      <About data={aboutData} />
+      <Rpo data={rpoData} />
+      <SoftwareDevelopment data={softwareDevelopmentData} />
+      <Gallery data={galleryData} />
+      <Testimonials data={testimonialsData} />
+      <Team data={teamData} />
+      <Career data={careerData} />
+      <Contact data={contactData} />
     </>
   );
 }
