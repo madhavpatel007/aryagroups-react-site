@@ -1,6 +1,6 @@
 import { useState } from "react";
-import emailjs from "emailjs-com";
 import React from "react";
+import { getFunctions, httpsCallable } from "firebase/functions";
 
 const initialState = {
   name: "",
@@ -19,17 +19,40 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    const functions = getFunctions();
+    const userResponseSubmitEmail = httpsCallable(
+      functions,
+      "sendEmail"
+    )({
+      from: process.env.REACT_APP_SMTP_EMAIL,
+      to: process.env.REACT_APP_SMTP_EMAIL,
+      subject: `Inquiry Email from ${email}`,
+      text: message,
+    });
+    userResponseSubmitEmail()
+      .then((result) => {
+        console.log(result.data.output);
+      })
+      .catch((error) => {
+        console.log(`error: ${JSON.stringify(error)}`);
+      });
+
+    const userConfirmationSubmitEmail = httpsCallable(
+      functions,
+      "sendEmail"
+    )({
+      from: process.env.REACT_APP_SMTP_EMAIL,
+      to: process.env.email,
+      subject: "Message From Arya Groups",
+      text: "Your response has been submitted to Arya Groups successfully.",
+    });
+    userConfirmationSubmitEmail()
+      .then((result) => {
+        console.log(result.data.output);
+      })
+      .catch((error) => {
+        console.log(`error: ${JSON.stringify(error)}`);
+      });
   };
   return (
     <>
@@ -121,29 +144,35 @@ export const Contact = (props) => {
               </p>
             </div>
           </div>
-          <div className="col-md-12">
-            <div className="row">
-              <div className="social">
-                <ul>
-                  <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          {/* <div className="col-md-12">
+            <div className="row"> */}
+          <div className="social">
+            <ul>
+              <li>
+                <a
+                  href={props.data ? props.data.facebook : "/"}
+                  target="_blank"
+                >
+                  <i className="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href={props.data ? props.data.twitter : "/"} target="_blank">
+                  <i className="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={props.data ? props.data.linkedin : "/"}
+                  target="_blank"
+                >
+                  <i className="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
           </div>
+          {/* </div>
+          </div> */}
         </div>
       </div>
       <div id="footer">

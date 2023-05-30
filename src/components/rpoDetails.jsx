@@ -28,7 +28,7 @@ export const RpoDetails = (props) => {
           services.length > 0 &&
           services.map((item, index) => (
             <div className="row" key={index}>
-              {index % 2 == 0 && (
+              {index % 2 === 0 && (
                 <div className="col-xs-12 col-md-6">
                   {" "}
                   <img src={item.img} className="img-responsive" alt="" />{" "}
@@ -40,7 +40,7 @@ export const RpoDetails = (props) => {
                   <p>{item.description ? item.description : "loading..."}</p>
                 </div>
               </div>
-              {index % 2 == 1 && (
+              {index % 2 === 1 && (
                 <div className="col-xs-12 col-md-6">
                   {" "}
                   <img src={item.img} className="img-responsive" alt="" />{" "}
@@ -59,7 +59,7 @@ export const RpoDetails = (props) => {
           {reasons &&
             reasons.length > 0 &&
             reasons.slice(0, 4).map((item, index) => (
-              <div key={index} className="col-xs-6 col-md-3">
+              <div key={index} className="col-xs-12 col-md-6 col-lg-4" style={{ textAlign: "center" }}>
                 {" "}
                 <i className={item.icon}></i>
                 <h3>{item.title}</h3>
@@ -71,7 +71,7 @@ export const RpoDetails = (props) => {
           {reasons &&
             reasons.length > 0 &&
             reasons.slice(4, 8).map((item, index) => (
-              <div key={index} className="col-xs-6 col-md-3">
+              <div key={index} className="col-xs-12 col-md-6 col-lg-4" style={{ textAlign: "center" }}>
                 {" "}
                 <i className={item.icon}></i>
                 <h3>{item.title}</h3>

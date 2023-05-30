@@ -14,6 +14,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
+
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
@@ -40,7 +41,7 @@ const App = () => {
         />
         <Route
           path="/sw-development-details"
-          element={<SoftwareDevelopmentDetails />}
+          element={<SoftwareDevelopmentDetails data={landingPageData.SoftwareDevelopmentDetails} />}
         />
         <Route
           path="/rpo-details"
