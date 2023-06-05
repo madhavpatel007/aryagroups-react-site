@@ -62,15 +62,13 @@ export const RpoDetails = (props) => {
             reasons.slice(0, 4).map((item, index) => (
               <div
                 key={index}
-                className="col-xs-6 col-md-6 col-lg-3"
+                className="col-lg-3 col-sm-6 col-xs-12"
                 style={{ textAlign: "center" }}
               >
                 {" "}
                 <i className={item.icon}></i>
                 <h3>{item.title}</h3>
-                <p>
-                  <ReadMore>{item.description}</ReadMore>
-                </p>
+                <p>{item.description}</p>
               </div>
             ))}
         </div>
@@ -80,15 +78,13 @@ export const RpoDetails = (props) => {
             reasons.slice(4, 8).map((item, index) => (
               <div
                 key={index}
-                className="col-xs-6 col-md-6 col-lg-3"
+                className="col-lg-3 col-sm-6 col-xs-12"
                 style={{ textAlign: "center" }}
               >
                 {" "}
                 <i className={item.icon}></i>
                 <h3>{item.title}</h3>
-                <p>
-                  <ReadMore>{item.description}</ReadMore>
-                </p>
+                <p>{item.description}</p>
               </div>
             ))}
         </div>

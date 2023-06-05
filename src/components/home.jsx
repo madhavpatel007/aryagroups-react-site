@@ -32,7 +32,7 @@ function Home(props) {
       <Gallery data={galleryData} />
       <Testimonials data={testimonialsData} />
       <Team data={teamData} />
-      <Career data={careerData} />
+      {/* <Career data={careerData} /> */}
       <Contact data={contactData} />
     </>
   );
