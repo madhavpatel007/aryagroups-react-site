@@ -1,4 +1,3 @@
-const {onRequest} = require("firebase-functions/v2/https");
 import nodemailer from 'nodemailer';
 
 const functions = require('firebase-functions');

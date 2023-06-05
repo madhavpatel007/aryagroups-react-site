@@ -604,6 +604,9 @@ label {
   color: #608dfd;
   background: #fff;
 }
+#contact .row{
+  margin-bottom: 0px;
+}
 
 /* Career Section */
 #career {
@@ -730,6 +733,9 @@ label {
 #career .social i.fa:hover {
   color: #608dfd;
   background: #fff;
+}
+#career .row{
+  margin-bottom: 0px;
 }
 
 /* Footer Section*/
@@ -880,6 +886,6 @@ label {
 #softwareDevelopmentDetail .col-lg-4 {
   position: relative;
   min-height: 1px;
-  padding-right: 0px;
+  padding-right: 15px;
   padding-left: 15px;
 }

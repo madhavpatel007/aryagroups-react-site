@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ReadMore from "./readMore";
 
 export const RpoDetails = (props) => {
   const [services, setServices] = useState([]);
@@ -59,11 +60,17 @@ export const RpoDetails = (props) => {
           {reasons &&
             reasons.length > 0 &&
             reasons.slice(0, 4).map((item, index) => (
-              <div key={index} className="col-xs-12 col-md-6 col-lg-4" style={{ textAlign: "center" }}>
+              <div
+                key={index}
+                className="col-xs-6 col-md-6 col-lg-3"
+                style={{ textAlign: "center" }}
+              >
                 {" "}
                 <i className={item.icon}></i>
                 <h3>{item.title}</h3>
-                <p>{item.description}</p>
+                <p>
+                  <ReadMore>{item.description}</ReadMore>
+                </p>
               </div>
             ))}
         </div>
@@ -71,11 +78,17 @@ export const RpoDetails = (props) => {
           {reasons &&
             reasons.length > 0 &&
             reasons.slice(4, 8).map((item, index) => (
-              <div key={index} className="col-xs-12 col-md-6 col-lg-4" style={{ textAlign: "center" }}>
+              <div
+                key={index}
+                className="col-xs-6 col-md-6 col-lg-3"
+                style={{ textAlign: "center" }}
+              >
                 {" "}
                 <i className={item.icon}></i>
                 <h3>{item.title}</h3>
-                <p>{item.description}</p>
+                <p>
+                  <ReadMore>{item.description}</ReadMore>
+                </p>
               </div>
             ))}
         </div>

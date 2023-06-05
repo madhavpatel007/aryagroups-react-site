@@ -6,6 +6,8 @@ import "./App.css";
 import Home from "./components/home";
 import { SoftwareDevelopmentDetails } from "./components/softwareDevelopmentDetails";
 import { RpoDetails } from "./components/rpoDetails";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -20,35 +22,42 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          exact
-          path="/"
-          element={
-            <Home
-              headerData={landingPageData.Header}
-              aboutData={landingPageData.About}
-              rpoData={landingPageData.Rpo}
-              softwareDevelopmentData={landingPageData.SoftwareDevelopment}
-              galleryData={landingPageData.Gallery}
-              testimonialsData={landingPageData.Testimonials}
-              teamData={landingPageData.Team}
-              careerData={landingPageData.Contact}
-              contactData={landingPageData.Contact}
-            />
-          }
-        />
-        <Route
-          path="/sw-development-details"
-          element={<SoftwareDevelopmentDetails data={landingPageData.SoftwareDevelopmentDetails} />}
-        />
-        <Route
-          path="/rpo-details"
-          element={<RpoDetails data={landingPageData.RpoDetails} />}
-        />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <Home
+                headerData={landingPageData.Header}
+                aboutData={landingPageData.About}
+                rpoData={landingPageData.Rpo}
+                softwareDevelopmentData={landingPageData.SoftwareDevelopment}
+                galleryData={landingPageData.Gallery}
+                testimonialsData={landingPageData.Testimonials}
+                teamData={landingPageData.Team}
+                careerData={landingPageData.Contact}
+                contactData={landingPageData.Contact}
+              />
+            }
+          />
+          <Route
+            path="/sw-development-details"
+            element={
+              <SoftwareDevelopmentDetails
+                data={landingPageData.SoftwareDevelopmentDetails}
+              />
+            }
+          />
+          <Route
+            path="/rpo-details"
+            element={<RpoDetails data={landingPageData.RpoDetails} />}
+          />
+        </Routes>
+      </BrowserRouter>
+      <ToastContainer />
+    </>
   );
 };
 

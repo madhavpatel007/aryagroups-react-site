@@ -1,6 +1,7 @@
 import { useState } from "react";
-import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
 import React from "react";
+import { getFunctions, httpsCallable } from "firebase/functions";
 
 const initialState = {
   name: "",
@@ -11,29 +12,81 @@ const initialState = {
   resume: "",
 };
 export const Career = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ name, email, message, phoneNumber, designation, resume }, setState] =
+    useState(initialState);
+  const [errors, setErrors] = useState("");
+  const [file, setFile] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
+  const handleFileUpload = (e) => {
+    console.log(e.target.files[0]);
+    setFile(e.target.files[0]);
+    if (e.target.files[0]?.type !== "application/pdf") {
+      setErrors("Only PDF files are allowed");
+      toast.error("Only PDF files are allowed", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+    } else if (e.target.files[0]?.size > 2 * 1024 * 1024) {
+      setErrors("File size exceeds the limit of 2MB");
+      toast.error("File size exceeds the limit of 2MB", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+    } else {
+      setState((prevState) => ({ ...prevState, resume: e.target.files[0] }));
+    }
+  };
   const clearState = () => setState({ ...initialState });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
+    if (!errors) {
+      console.log(name, email, phoneNumber, designation, message, resume);
+    }
+    const functions = getFunctions();
+    const userResponseSubmitEmail = httpsCallable(
+      functions,
+      "sendEmail"
+    )({
+      from: process.env.REACT_APP_SMTP_EMAIL,
+      to: process.env.REACT_APP_SMTP_EMAIL,
+      subject: `Career Email from ${email}`,
+      text: message,
+      attachments: [
+        {
+          filename: file.name,
+          path: file.webkitRelativePath,
         },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      ],
+    });
+    userResponseSubmitEmail()
+      .then((result) => {
+        console.log(result.data.output);
+      })
+      .catch((error) => {
+        console.log(`error: ${JSON.stringify(error)}`);
+      });
+
+    const userConfirmationSubmitEmail = httpsCallable(
+      functions,
+      "sendEmail"
+    )({
+      from: process.env.REACT_APP_SMTP_EMAIL,
+      to: email,
+      subject: "Message From Arya Groups",
+      text: "Your response has been submitted to Arya Groups successfully.",
+    });
+    userConfirmationSubmitEmail()
+      .then((result) => {
+        console.log(result.data.output);
+      })
+      .catch((error) => {
+        console.log(`error: ${JSON.stringify(error)}`);
+      });
   };
+
   return (
     <div id="career">
       <div className="container">
@@ -104,34 +157,46 @@ export const Career = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="form-group">
-                <textarea
-                  name="message"
-                  id="message"
-                  className="form-control"
-                  rows="4"
-                  placeholder="Message"
-                  required
-                  onChange={handleChange}
-                ></textarea>
-                <p className="help-block text-danger"></p>
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="form-group">
+                    <textarea
+                      name="message"
+                      id="message"
+                      className="form-control"
+                      rows="4"
+                      placeholder="Message"
+                      required
+                      onChange={handleChange}
+                    ></textarea>
+                    <p className="help-block text-danger"></p>
+                  </div>
+                </div>
               </div>
-              <div className="form-group">
-                <input
-                  type="file"
-                  name="resume"
-                  id="resume"
-                  className="form-control"
-                  placeholder="Upload Resume"
-                  required
-                  onChange={handleChange}
-                />
-                <p className="help-block text-danger"></p>
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="form-group">
+                    <input
+                      type="file"
+                      name="resume"
+                      id="resume"
+                      className="form-control"
+                      placeholder="Upload Resume"
+                      required
+                      onChange={handleFileUpload}
+                    />
+                    <p className="help-block text-danger"></p>
+                  </div>
+                </div>
               </div>
-              <div id="success"></div>
-              <button type="submit" className="btn btn-custom btn-lg">
-                Submit
-              </button>
+              <div className="row">
+                <div className="col-md-12">
+                  <div id="success"></div>
+                  <button type="submit" className="btn btn-custom btn-lg">
+                    Submit
+                  </button>
+                </div>
+              </div>
             </form>
           </div>
         </div>

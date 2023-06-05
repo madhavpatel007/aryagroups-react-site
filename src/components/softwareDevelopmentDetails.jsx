@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ReadMore from "./readMore";
 
 export const SoftwareDevelopmentDetails = (props) => {
   const [services, setServices] = useState([]);
@@ -45,13 +46,13 @@ export const SoftwareDevelopmentDetails = (props) => {
             reasons.map((item, index) => (
               <div
                 key={index}
-                className="col-lg-4 col-sm-6 col-xs-12"
+                className="col-lg-4 col-sm-6 col-xs-6"
                 style={{ textAlign: "center" }}
               >
                 {" "}
                 <i className={item.icon}></i>
                 <h3>{item.title}</h3>
-                <p>{item.description}</p>
+                <p><ReadMore>{item.description}</ReadMore></p>
               </div>
             ))}
         </div>
@@ -88,13 +89,13 @@ export const SoftwareDevelopmentDetails = (props) => {
             partnerWithUs.map((item, index) => (
               <div
                 key={index}
-                className="col-lg-4 col-sm-6 col-xs-12"
+                className="col-lg-4 col-sm-6 col-xs-6"
                 style={{ textAlign: "center" }}
               >
                 {" "}
                 <i className={item.icon}></i>
                 <h3>{item.title}</h3>
-                <p>{item.description}</p>
+                <p><ReadMore>{item.description}</ReadMore></p>
               </div>
             ))}
         </div>

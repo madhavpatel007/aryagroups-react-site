@@ -42,7 +42,7 @@ export const Contact = (props) => {
       "sendEmail"
     )({
       from: process.env.REACT_APP_SMTP_EMAIL,
-      to: process.env.email,
+      to: email,
       subject: "Message From Arya Groups",
       text: "Your response has been submitted to Arya Groups successfully.",
     });
@@ -98,22 +98,30 @@ export const Contact = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="form-group">
-                  <textarea
-                    name="message"
-                    id="message"
-                    className="form-control"
-                    rows="4"
-                    placeholder="Message"
-                    required
-                    onChange={handleChange}
-                  ></textarea>
-                  <p className="help-block text-danger"></p>
+                <div className="row">
+                  <div className="col-md-12">
+                    <div className="form-group">
+                      <textarea
+                        name="message"
+                        id="message"
+                        className="form-control"
+                        rows="4"
+                        placeholder="Message"
+                        required
+                        onChange={handleChange}
+                      ></textarea>
+                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
                 </div>
-                <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
-                </button>
+                <div className="row">
+                  <div className="col-md-12">
+                    <div id="success"></div>
+                    <button type="submit" className="btn btn-custom btn-lg">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
