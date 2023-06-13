@@ -45,7 +45,7 @@ export const SoftwareDevelopmentDetails = (props) => {
             reasons.map((item, index) => (
               <div
                 key={index}
-                className="col-lg-3 col-sm-6 col-xs-12"
+                className="col-lg-4 col-sm-6 col-xs-12"
                 style={{ textAlign: "center" }}
               >
                 {" "}

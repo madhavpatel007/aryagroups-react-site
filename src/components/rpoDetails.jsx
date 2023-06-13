@@ -14,6 +14,10 @@ export const RpoDetails = (props) => {
     }
   }, [props?.data]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div id="rpoDetail">
       <div className="container">

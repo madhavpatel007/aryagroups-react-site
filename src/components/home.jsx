@@ -31,7 +31,7 @@ function Home(props) {
       <SoftwareDevelopment data={softwareDevelopmentData} />
       <Gallery data={galleryData} />
       <Testimonials data={testimonialsData} />
-      <Team data={teamData} />
+      {/* <Team data={teamData} /> */}
       {/* <Career data={careerData} /> */}
       <Contact data={contactData} />
     </>

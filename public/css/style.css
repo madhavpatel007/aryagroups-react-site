@@ -210,7 +210,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: url(../img/istockphoto-1127447326-612x612.jpg) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -218,7 +218,7 @@ a:focus,
   -o-background-size: cover;
 }
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
@@ -247,8 +247,29 @@ header .intro-text {
 }
 /* Rpo Section */
 #rpo {
+  display: table;
+  width: 100%;
   padding: 100px 0;
-  background: #f6f6f6;
+  background: url(../img/istockphoto-1127447326-612x612.jpg) center center no-repeat content-box;
+  background-color: #e5e5e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#rpo .overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+#rpo h2{
+  color: #fff;
+}
+#rpo p{
+  color: #fff;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 #rpo i.fa {
   font-size: 38px;
@@ -262,10 +283,34 @@ header .intro-text {
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
+#rpo button{
+  margin-bottom: 15px;
+}
 
 #softwareDevelopment {
+  display: table;
+  width: 100%;
   padding: 100px 0;
-  background: #f6f6f6;
+  background: url(../img/istockphoto-1127447326-612x612.jpg) center center no-repeat content-box;
+  background-color: #e5e5e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#softwareDevelopment .overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+#softwareDevelopment h2{
+  color: #fff;
+}
+#softwareDevelopment p{
+  color: #fff;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 #softwareDevelopment i.fa {
   font-size: 38px;
@@ -278,6 +323,9 @@ header .intro-text {
   border-radius: 50%;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+#softwareDevelopment button{
+  margin-bottom: 15px;
 }
 
 /* About Section */
@@ -815,6 +863,7 @@ label {
   background: #fff;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  height: 275px;
 }
 #rpoDetail p {
   line-height: 24px;

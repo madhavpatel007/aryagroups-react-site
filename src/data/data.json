@@ -1,7 +1,7 @@
 {
   "Header": {
     "title": "Ambitions Realized",
-    "paragraph": "Transform Your Business with Next Generation Software Solutions that Drive Success."
+    "paragraph": "Transform Your Business with Next Generation RPO & Software Solutions that Drive Success."
   },
   "About": {
     "paragraph": "Arya Groups has rapidly emerged as a prominent player in the industry, offering a comprehensive range of staffing and recruitment services along with top-notch software development solutions. With a humble beginning of just 10 freelance employees, we have grown exponentially to a dedicated team of 100+ professionals, driving success for both domestic and international clients.",
@@ -22,6 +22,21 @@
   "Gallery": [
     {
       "title": "Project Title",
+      "largeImage": "img/portfolio/12-large.png",
+      "smallImage": "img/portfolio/12-small.png"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/11-large.png",
+      "smallImage": "img/portfolio/11-small.png"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/10-large.png",
+      "smallImage": "img/portfolio/10-small.png"
+    },
+    {
+      "title": "Project Title",
       "largeImage": "img/portfolio/01-large.jpg",
       "smallImage": "img/portfolio/01-small.jpg"
     },
@@ -39,21 +54,6 @@
       "title": "Project Title",
       "largeImage": "img/portfolio/04-large.jpg",
       "smallImage": "img/portfolio/04-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
     },
     {
       "title": "Project Title",
@@ -160,50 +160,12 @@
     "twitter": "https://twitter.com/arya_groups",
     "linkedin": "https://www.linkedin.com/company/arya-groups/"
   },
-  "Rpo": [
-    {
-      "icon": "fa fa-comments-o",
-      "title": "Introduction",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-bullhorn",
-      "title": "Why Chose Us",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-group",
-      "title": "Services We Offer",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-magic",
-      "title": "Why Partner With Us",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    }
-  ],
-  "SoftwareDevelopment": [
-    {
-      "icon": "fa fa-comments-o",
-      "title": "Introduction",
-      "text": "Welcome to Arya groups, where innovation meets excellence in software development. We are a trusted partner for businesses seeking top-notch custom software solutions tailored to their unique needs. With a team of highly skilled developers and a proven track record of success, we are committed to driving your digital transformation and propelling your business forward."
-    },
-    {
-      "icon": "fa fa-bullhorn",
-      "title": "Why Chose Us",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-group",
-      "title": "Services We Offer",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-magic",
-      "title": "Why Partner With Us",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    }
-  ],
+  "Rpo": {
+    "title": "Arya Group is a renowned provider of staffing solutions and Recruitment Process Outsourcing (RPO) services, catering to the needs of businesses seeking efficient talent acquisition processes. With their expertise in the industry, Arya Group offers comprehensive staffing and RPO solutions that streamline recruitment and optimize workforce management."
+  },
+  "SoftwareDevelopment": {
+    "title": "Arya Group offers comprehensive software solutions and outsourcing services for websites. With expertise in web development, design, and digital marketing, Arya Group caters to the diverse needs of businesses looking to establish or enhance their online presence."
+  },
   "RpoDetails": {
     "intro": "Welcome to Arya Group's RPO Solutions, your trusted partner for Recruitment Process Outsourcing (RPO) and Staffing solutions. We specialize in delivering high-quality recruitment services that align with your business objectives. Our team of experienced recruiters utilizes cutting-edge technology and industry best practices to attract top talent. Whether you need RPO services or Staffing solutions, we are here to help you build a high-performing team.",
     "services": [

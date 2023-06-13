@@ -11,31 +11,36 @@ export const SoftwareDevelopment = (props) => {
 
   return (
     <div id="softwareDevelopment" className="text-center">
-      <div className="container">
-        <div className="col-md-10 col-md-offset-1 section-title">
-          <h2>Software Development</h2>
+      <div className="overlay">
+        <div className="container">
+          <div className="col-md-10 col-md-offset-1 section-title">
+            <h2>Software Development</h2>
+          </div>
+          <div className="col-md-10 col-md-offset-1 section-title">
+            {/* {props.data
+              ? props.data.map((d, i) => (
+                  <div key={`${d.title}-${i}`} className="col-xs-12 col-md-3">
+                    {" "}
+                    <i className={d.icon}></i>
+                    <h3>{d.title}</h3>
+                    <p>
+                      <ReadMore>{d.text}</ReadMore>
+                    </p>
+                  </div>
+                ))
+              : "Loading..."} */}
+            <p>
+              {props?.data?.title}
+            </p>
+          </div>
+          <button
+            type="button"
+            className="btn btn-custom btn-lg"
+            onClick={() => goToDetails()}
+          >
+            See More
+          </button>
         </div>
-        <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.title}-${i}`} className="col-xs-12 col-md-3">
-                  {" "}
-                  <i className={d.icon}></i>
-                  <h3>{d.title}</h3>
-                  <p>
-                    <ReadMore>{d.text}</ReadMore>
-                  </p>
-                </div>
-              ))
-            : "Loading..."}
-        </div>
-        <button
-          type="button"
-          className="btn btn-custom btn-lg"
-          onClick={() => goToDetails()}
-        >
-          See More
-        </button>
       </div>
     </div>
   );
