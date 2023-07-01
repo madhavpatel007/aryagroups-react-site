@@ -9,6 +9,8 @@ import { Testimonials } from "./testimonials";
 import { Team } from "./Team";
 import { Career } from "./career";
 import { Contact } from "./contact";
+import { useEffect } from "react";
+import { useAnalytics } from "../contexts/AnalyticsContext";
 
 function Home(props) {
   const {
@@ -22,6 +24,13 @@ function Home(props) {
     careerData,
     contactData,
   } = props;
+
+  const { printFirebaseAnalyticsLog } = useAnalytics();
+
+  useEffect(() => {
+    printFirebaseAnalyticsLog("Home Page");
+  }, []);
+
   return (
     <>
       <Navigation />
@@ -30,7 +39,7 @@ function Home(props) {
       <Rpo data={rpoData} />
       <SoftwareDevelopment data={softwareDevelopmentData} />
       <Gallery data={galleryData} />
-      <Testimonials data={testimonialsData} />
+      {/* <Testimonials data={testimonialsData} /> */}
       {/* <Team data={teamData} /> */}
       {/* <Career data={careerData} /> */}
       <Contact data={contactData} />

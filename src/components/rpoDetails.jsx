@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import ReadMore from "./readMore";
+import { useAnalytics } from "../contexts/AnalyticsContext";
 
 export const RpoDetails = (props) => {
   const [services, setServices] = useState([]);
   const [reasons, setReasons] = useState([]);
+
+  const { printFirebaseAnalyticsLog } = useAnalytics();
 
   useEffect(() => {
     if (props?.data && props?.data?.services) {
@@ -15,6 +17,7 @@ export const RpoDetails = (props) => {
   }, [props?.data]);
 
   useEffect(() => {
+    printFirebaseAnalyticsLog("RPO Details Page");
     window.scrollTo(0, 0);
   }, []);
 
@@ -69,8 +72,13 @@ export const RpoDetails = (props) => {
                 className="col-lg-3 col-sm-6 col-xs-12"
                 style={{ textAlign: "center" }}
               >
-                {" "}
-                <i className={item.icon}></i>
+                <div
+                  className="rpoDetail-image"
+                  style={{ textAlign: "-webkit-center" }}
+                >
+                  {" "}
+                  <img src={item.img} alt="" />{" "}
+                </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
@@ -86,7 +94,13 @@ export const RpoDetails = (props) => {
                 style={{ textAlign: "center" }}
               >
                 {" "}
-                <i className={item.icon}></i>
+                <div
+                  className="rpoDetail-image"
+                  style={{ textAlign: "-webkit-center" }}
+                >
+                  {" "}
+                  <img src={item.img} alt="" />{" "}
+                </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>

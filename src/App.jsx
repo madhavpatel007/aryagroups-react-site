@@ -8,6 +8,7 @@ import { SoftwareDevelopmentDetails } from "./components/softwareDevelopmentDeta
 import { RpoDetails } from "./components/rpoDetails";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { getAnalytics } from "@firebase/analytics";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -16,6 +17,9 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
+
+  // In Future If We Want to See the Activity Of A Specific User, We Will Replace The 'USER ID' With Actual UserId
+  // analytics.setUserId('USER ID');
 
   useEffect(() => {
     setLandingPageData(JsonData);

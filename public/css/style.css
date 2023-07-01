@@ -250,7 +250,7 @@ header .intro-text {
   display: table;
   width: 100%;
   padding: 100px 0;
-  background: url(../img/istockphoto-1127447326-612x612.jpg) center center no-repeat content-box;
+  background: url("../img/rpo/rpoBG.jpg") center center no-repeat content-box;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -259,6 +259,9 @@ header .intro-text {
 }
 #rpo .overlay {
   background: rgba(0, 0, 0, 0.5);
+  /* padding-top: 350px;
+  padding-bottom: 200px;
+  text-align: center; */
 }
 #rpo h2{
   color: #fff;
@@ -291,7 +294,7 @@ header .intro-text {
   display: table;
   width: 100%;
   padding: 100px 0;
-  background: url(../img/istockphoto-1127447326-612x612.jpg) center center no-repeat content-box;
+  background: url("../img/swDevelopment/swDevelopment.jpg") center center no-repeat content-box;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -870,6 +873,13 @@ label {
   margin: 30px 0;
   text-align: justify;
 }
+#rpoDetail .rpoDetail-image img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
 
 /* Software Development Detail Section */
 #softwareDevelopmentDetail {
@@ -937,4 +947,11 @@ label {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+}
+#softwareDevelopmentDetail .softwareDevelopmentDetail-image img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }

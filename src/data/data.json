@@ -170,54 +170,54 @@
     "intro": "Welcome to Arya Group's RPO Solutions, your trusted partner for Recruitment Process Outsourcing (RPO) and Staffing solutions. We specialize in delivering high-quality recruitment services that align with your business objectives. Our team of experienced recruiters utilizes cutting-edge technology and industry best practices to attract top talent. Whether you need RPO services or Staffing solutions, we are here to help you build a high-performing team.",
     "services": [
       {
-        "img": "img/team/01.jpg",
+        "img": "img/rpo/ourRPOService.png",
         "title": "Our RPO Services",
         "description": "Our RPO services offer a seamless recruitment experience, saving you time and resources. We understand the importance of finding the right talent for your organization, and our expert recruiters are skilled in identifying qualified candidates. By leveraging advanced sourcing techniques and utilizing high-reach keywords, we ensure that your job postings reach a wide audience. Our comprehensive RPO solutions are scalable and cost-effective, enabling you to streamline your hiring process."
       },
       {
-        "img": "img/team/02.jpg",
+        "img": "img/rpo/ourStaffingService.png",
         "title": "Our Staffing Services",
         "description": "With our Staffing services, we provide you with the flexibility to quickly find the right talent for your temporary, contract, or permanent positions. Our extensive network of skilled professionals is ready to contribute to your organization's success. Through our targeted candidate assessment process, we evaluate each candidate's skills and cultural fit, ensuring that we present you with the best-matched individuals. By optimizing our job descriptions and utilizing high-reach keywords, we enhance your chances of attracting top talent."
       }
     ],
     "reasons": [
       {
-        "icon": "fa fa-comments-o",
+        "img": "img/rpo/expertiseAndExperience.jpg",
         "title": "Expertise And Experience",
         "description": "With years of experience in the recruitment industry, we have the expertise to effectively navigate the hiring landscape. Our team of skilled recruiters brings a wealth of knowledge and a proven track record in attracting top talent across various industries, increasing your chances of finding the perfect fit."
       },
       {
-        "icon": "fa fa-bullhorn",
+        "img": "img/rpo/remoteWorkerSolutions.png",
         "title": "Remote Worker Solutions",
         "description": "Our proven technology, tools, processes and market intelligence means ease, scale and flexibility for you.  As your dedicated partner for hiring remote workers, you can choose a combination of teams working on a contractual or on permanent basis. While you focus on your key projects and deliverables, we take your operational hassles away by recruiting, engaging and managing your outsourced remote teams."
       },
       {
-        "icon": "fa fa-group",
+        "img": "img/rpo/campusRecruitment.jpg",
         "title": "Campus Recruitment",
         "description": "Campus Recruitment services include Pre-campus, On-campus, Post-campus and Off-campus activities."
       },
       {
-        "icon": "fa fa-magic",
+        "img": "img/rpo/customizedSolutions.jpg",
         "title": "Customized Solutions",
         "description": "We understand that every organization has unique needs. Our customized RPO and Staffing solutions are tailored to your specific requirements, ensuring that we align our services with your business objectives. By incorporating high reach keywords into our job postings, we increase their visibility and reach a larger pool of potential candidates."
       },
       {
-        "icon": "fa fa-comments-o",
+        "img": "img/rpo/cuttingEdgeTechnology.png",
         "title": "Cutting Edge Technology",
         "description": "We leverage the latest recruitment technologies and tools to enhance efficiency and accuracy. By utilizing advanced applicant tracking systems and data analytics, we identify and engage with candidates more effectively. Our optimized content, infused with high reach keywords, helps improve your search engine rankings, ensuring greater online visibility."
       },
       {
-        "icon": "fa fa-bullhorn",
+        "img": "img/rpo/scalabilityAndFlexibility.png",
         "title": "Scalability And Flexibility",
         "description": "Our services are designed to scale with your business. Whether you are a startup or a large enterprise, we can quickly adjust our resources to meet your changing hiring needs. By targeting high reach keywords, we attract a wider audience, increasing the likelihood of finding the right talent at the right time."
       },
       {
-        "icon": "fa fa-group",
+        "img": "img/rpo/partnershipApproach.jpeg",
         "title": "Partnership Approach",
         "description": "We value long-term partnerships with our clients. By closely collaborating with your HR team, we gain a deep understanding of your organizational culture, values, and goals. This enables us to present you with candidates who not only possess the required skills but also align with your company's vision. By optimizing our website content with high reach keywords, we improve our online visibility and reach a broader audience."
       },
       {
-        "icon": "fa fa-magic",
+        "img": "img/rpo/experienceTheDifference.png",
         "title": "Experience The Difference",
         "description": "Partner with Arya Groups RPO Solutions and experience the difference of a strategic and results-driven recruitment service. Our optimized content, infused with high reach keywords, enhances your online presence and attracts qualified candidates. Contact us today to discuss your hiring needs and explore how our RPO and Staffing solutions can help you achieve your talent acquisition goals. Trust Arya Groups RPO Solutions to deliver exceptional recruitment services that drive your business forward."
       }
@@ -227,27 +227,27 @@
     "intro": "Welcome to Arya Groups Software Solutions, where innovation meets excellence in software development. We are a trusted partner for businesses seeking top-notch custom software solutions tailored to their unique needs. With a team of highly skilled developers and a proven track record of success, we are committed to driving your digital transformation and propelling your business forward.",
     "reasons": [
       {
-        "icon": "fa fa-comments-o",
+        "img": "img/swDevelopment/expertise.png",
         "title": "Expertise",
         "description": "Our team brings extensive expertise in software development, covering a wide range of technologies and platforms."
       },
       {
-        "icon": "fa fa-bullhorn",
+        "img": "img/swDevelopment/collaboration.png",
         "title": "Collaboration",
         "description": "We believe in working closely with our clients, listening to their requirements, and providing personalized solutions that meet their goals."
       },
       {
-        "icon": "fa fa-group",
+        "img": "img/swDevelopment/quality.png",
         "title": "Quality",
         "description": "Our commitment to quality is unwavering. We adhere to rigorous testing and quality assurance processes to deliver robust, scalable, and bug-free software."
       },
       {
-        "icon": "fa fa-group",
+        "img": "img/swDevelopment/innovation.png",
         "title": "Innovation",
         "description": "We stay at the forefront of technological advancements, continuously exploring new tools, frameworks, and methodologies to deliver cutting-edge solutions."
       },
       {
-        "icon": "fa fa-magic",
+        "img": "img/swDevelopment/clientSuccess.png",
         "title": "Client Success",
         "description": "We measure our success by the success of our clients. Our aim is to help businesses achieve their objectives, optimize processes, and drive growth."
       }
@@ -264,32 +264,32 @@
     ],
     "whyPartnerWithUs": [
       {
-        "icon": "fa fa-comments-o",
+        "img": "img/swDevelopment/industryExperience.png",
         "title": "Industry Experience",
         "description": "We have served clients across various industries, including healthcare, finance, e-commerce, education, and more."
       },
       {
-        "icon": "fa fa-bullhorn",
+        "img": "img/swDevelopment/provenTrackRecord.jpeg",
         "title": "Proven Track Record",
         "description": "Our portfolio showcases a diverse range of successful projects, demonstrating our ability to deliver results and exceed client expectations."
       },
       {
-        "icon": "fa fa-group",
+        "img": "img/swDevelopment/clientCentricApproach.png",
         "title": "Client-Centric Approach",
         "description": "We prioritize your business goals and align our solutions with your unique requirements, ensuring a seamless development process."
       },
       {
-        "icon": "fa fa-magic",
+        "img": "img/swDevelopment/agileMethodology.png",
         "title": "Agile Methodology",
         "description": "Our agile development approach allows for flexibility, iterative improvements, and regular client feedback, ensuring a collaborative and efficient workflow."
       },
       {
-        "icon": "fa fa-comments-o",
+        "img": "img/swDevelopment/timelyDelivery.png",
         "title": "Timely Delivery",
         "description": "We understand the importance of deadlines. Our team is dedicated to delivering projects on time, without compromising quality."
       },
       {
-        "icon": "fa fa-bullhorn",
+        "img": "img/swDevelopment/confidentialityAndSecurity.jpeg",
         "title": "Confidentiality and Security",
         "description": "We prioritize the confidentiality and security of your sensitive information, employing industry best practices to protect your data."
       }

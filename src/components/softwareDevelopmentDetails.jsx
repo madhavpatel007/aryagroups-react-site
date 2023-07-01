@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useAnalytics } from "../contexts/AnalyticsContext";
 
 export const SoftwareDevelopmentDetails = (props) => {
   const [services, setServices] = useState([]);
   const [reasons, setReasons] = useState([]);
   const [partnerWithUs, setPartnerWithUs] = useState([]);
+
+  const { printFirebaseAnalyticsLog } = useAnalytics();
 
   useEffect(() => {
     if (props?.data && props?.data?.services) {
@@ -18,6 +21,7 @@ export const SoftwareDevelopmentDetails = (props) => {
   }, [props?.data]);
 
   useEffect(() => {
+    printFirebaseAnalyticsLog("Software Development Details Page");
     window.scrollTo(0, 0);
   }, []);
 
@@ -48,8 +52,13 @@ export const SoftwareDevelopmentDetails = (props) => {
                 className="col-lg-4 col-sm-6 col-xs-12"
                 style={{ textAlign: "center" }}
               >
-                {" "}
-                <i className={item.icon}></i>
+                <div
+                  className="softwareDevelopmentDetail-image"
+                  style={{ textAlign: "-webkit-center" }}
+                >
+                  {" "}
+                  <img src={item.img} alt="" />{" "}
+                </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
@@ -91,8 +100,13 @@ export const SoftwareDevelopmentDetails = (props) => {
                 className="col-lg-3 col-sm-6 col-xs-12"
                 style={{ textAlign: "center" }}
               >
-                {" "}
-                <i className={item.icon}></i>
+                <div
+                  className="softwareDevelopmentDetail-image"
+                  style={{ textAlign: "-webkit-center" }}
+                >
+                  {" "}
+                  <img src={item.img} alt="" />{" "}
+                </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
