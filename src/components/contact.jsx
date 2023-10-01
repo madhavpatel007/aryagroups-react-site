@@ -43,8 +43,8 @@ export const Contact = (props) => {
     )({
       from: process.env.REACT_APP_SMTP_EMAIL,
       to: email,
-      subject: "Message From Arya Groups",
-      text: "Your response has been submitted to Arya Groups successfully.",
+      subject: "Message From Arya Infolabs",
+      text: "Your response has been submitted to Arya Infolabs successfully.",
     });
     userConfirmationSubmitEmail()
       .then((result) => {
@@ -186,7 +186,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            2023 Arya Groups.
+            2023 Arya Infolabs.
             {/* <a href="http://www.templatewire.com" rel="nofollow">
               Madhav Patel
             </a> */}

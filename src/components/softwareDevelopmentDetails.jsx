@@ -39,7 +39,7 @@ export const SoftwareDevelopmentDetails = (props) => {
         <div className="row">
           <div className="col-xs-12 col-md-12">
             <div className="rpo-detail-text">
-              <h2>Why Choose Arya Groups RPO Solutions</h2>
+              <h2>Why Choose Arya Infolabs RPO Solutions</h2>
             </div>
           </div>
         </div>

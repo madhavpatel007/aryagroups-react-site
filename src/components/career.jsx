@@ -75,8 +75,8 @@ export const Career = (props) => {
     )({
       from: process.env.REACT_APP_SMTP_EMAIL,
       to: email,
-      subject: "Message From Arya Groups",
-      text: "Your response has been submitted to Arya Groups successfully.",
+      subject: "Message From Arya Infolabs",
+      text: "Your response has been submitted to Arya Infolabs successfully.",
     });
     userConfirmationSubmitEmail()
       .then((result) => {
